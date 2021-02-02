@@ -3,6 +3,7 @@
 ./centos.pem
 # Environment
 ./uenv
+uenv
 # zip files
 ./files2share
 ./files2share.zip

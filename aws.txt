@@ -1,0 +1,15 @@
+
+ssh login method
+ip: 3.134.98.233
+Username: centos
+Certificate: centos.pem
+
+Switch to root after login
+Root password: btt1688
+
+Using mysql database:
+Root password: maxhom168!
+Database name: maxhom_qiweilian
+The data is stored in this table:
+maxhom_power
+mysql -u root -p maxhom_qiweilian
