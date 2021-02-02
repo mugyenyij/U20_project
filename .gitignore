@@ -1,0 +1,14 @@
+# files with passwords and configs
+./aws.txt
+./centos.pem
+# Environment
+./uenv
+# zip files
+./files2share
+./files2share.zip
+# Byte-compiled / optimized / DLL files
+__pycache__/
+.pyc
+.ipynb_checkpoints/
+# OS files
+.DS_Store
