@@ -8,6 +8,15 @@ from stat import S_IREAD
 import datetime
 import ipywidgets
 
+server_db_pword = ''
+server_dns = ''
+server = 'new'
+if server == 'old':
+    server_db_pword = 'maxhom168!'
+    server_dns = 'ec2-3-134-98-233.us-east-2.compute.amazonaws.com'
+if server == 'new':
+    server_db_pword = 'maxhom168'
+    server_dns = 'ec2-3-143-213-136.us-east-2.compute.amazonaws.com'
 
 def date_range():
     """
@@ -26,9 +35,9 @@ def date_range():
     return start_date, end_date
 
 def db_connect(pem_file, start_date, end_date, sql_hostname='127.0.0.1',
-               sql_username='root', sql_password='maxhom168!',
+               sql_username='root', sql_password=server_db_pword,
                sql_main_database='maxhom_qiweilian', sql_port_number=3306,
-               ssh_hostname='ec2-3-134-98-233.us-east-2.compute.amazonaws.com',
+               ssh_hostname=server_dns,
                ssh_username='centos', ssh_port_number=22, sql_ip_address='1.1.1.1.1'):
     """
     Function to make connection to mysql database hosted on EC2 service on AWS.
